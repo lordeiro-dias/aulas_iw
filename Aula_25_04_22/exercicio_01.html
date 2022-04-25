@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <h1>ESTRANGEIRO OU BRASILERIO?</h1>
+    Digite sua nacionalidade em 3 letras: <input type="text" name="pais" id="pais">
+    <input type="button" value="VERIFICAR" onclick="mostrar()">
+    <div id="resultado"></div>
+    <script>
+        function mostrar(){
+            var pais = document.querySelector('input#pais');
+            var pais = text.toUpperCase();
+            var res = document.querySelector('div#resultado');
+
+            res.innerHTML = `<p>Você vive em ${pais}</p>`
+
+            if(pais == 'BRA'){
+                res.innerHTML = '<p>Você é brasileiro</p>'
+            }
+            else{
+                res.innerHTML = '<p>Você é estrangeiro</p>'
+            }
+        }
+    </script>
+</body>
+</html>
